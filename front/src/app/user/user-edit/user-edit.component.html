@@ -1,0 +1,17 @@
+<h1>User edit</h1>
+<form #form="ngForm" (ngSubmit)="edituser()" >
+    <ul>
+        <li><input type =text name=" userName" id="username" value="{{user.userName}}">
+        <label for="username">username</label></li>
+        <li><input type =text name=" email" id="email" value="{{user.email}}">
+        <label for="email">email</label></li>
+        <li><input type =text name=" adresse" id="adresse" value="{{user.adresse}}">
+        <label for="adresse">adresse</label></li>
+        <li><input type =hidden name=" password" id="adresse" value="{{user.password}}">
+        </li>
+        <li><input type =hidden name=" role" id="role" value="{{user.role}}">
+        </li>
+        <li><input type =hidden name="id" id = "id" value ="{{user.id}}" ></li>
+        <li><button type="submit">edit</button></li>
+    </ul>
+</form>

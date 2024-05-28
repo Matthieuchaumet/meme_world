@@ -1,0 +1,19 @@
+<div class="container my-5">
+    <h1 class="mb-3">User {{id}} Memes</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td *ngIf="idUser === product.userId"> <button (click) ="deleteProduct(product.userId)">delete</button></td>
+            </tr> 
+        </tbody>
+    </table>
+

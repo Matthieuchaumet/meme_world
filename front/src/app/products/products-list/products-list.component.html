@@ -1,0 +1,46 @@
+<div class="container my-5">
+    <h1 class="mb-3">Memes</h1>
+    <button id="MemeCreation" class="btn btn-success" data-toggle="modal" data-target="#CreateModal">Create Meme</button>
+    <div class="modal fade" id="CreateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <form class="mx-1 mx-md-4" #form="ngForm" (ngSubmit)="createMeme()">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Meme Creation</h5>
+                    </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><input type="text" name="name" id="name" [(ngModel)]="productsRequest.name"></li>
+                        <li><label for="name">Meme name</label></li>
+                        <li><input type="text" name="price" id="price" [(ngModel)]="productsRequest.price"></li>
+                        <li><label for="price">Meme price</label></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+                
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Propriéraire</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.userId}}</td>
+                <td><button>details</button></td>
+            </tr> 
+        </tbody>
+    </table>
+    
