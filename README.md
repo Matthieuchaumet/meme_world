@@ -1,16 +1,16 @@
 # Site e-shop de meme
 
-Projet de site e-shop contruit de A à Z en full stack, un e-shop ou la commuauté peut partager, créer, et vendre l'image ou vidéo de leur meme.
+Projet de site e-shop contruit de A à Z en full stack, un e-shop où la commuauté peut partager, créer, et vendre l'image ou vidéo de leur meme.
 
-# Développement
+## Développement
 
 Front-end : Angular 14 (web), Flutter (mobile et application web).
 
-Back-end : .NET core et C# 
+Back-end : .NET core, C# et Microsoft SQL Server
 
-Conteneur : Docker pour conteneurisé les différentes applications.
+Conteneur : Docker pour conteneuriser les différentes applications.
 
-# Déploiement
+## Déploiement
 
 Terraform : Infra as Code.
 
